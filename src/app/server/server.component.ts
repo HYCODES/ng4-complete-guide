@@ -1,14 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-server',
   templateUrl: './server.component.html'
 })
-export class ServerComponent implements OnInit {
+export class ServerComponent {
+  // tslint:disable-next-line:no-inferrable-types
+  serverId: number = 10;
+  // tslint:disable-next-line:no-inferrable-types
+  private serverStatus: string = 'offline';
 
-  constructor() { }
-
-  ngOnInit() {
+  getServerStatus() {
+    return this.serverStatus;
   }
 
 }

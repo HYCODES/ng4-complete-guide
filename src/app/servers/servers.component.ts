@@ -4,11 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-servers', // selector by element (tag)
   // selector: '[app-servers]', // selector by cutom attribute
   // selector: '.app-servers', // selector by css class
-  template: `
-    <app-server></app-server>
-    <app-server></app-server>
-    `,
-  styleUrls: ['./servers.component.css']
+  templateUrl: './servers.component.html'
 })
 export class ServersComponent implements OnInit {
 
